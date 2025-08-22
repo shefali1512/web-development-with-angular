@@ -11,3 +11,5 @@
 
 3. Create Angular Project 
     -  Node.js , npm, angualr CLI
+
+4. 
