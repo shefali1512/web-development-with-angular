@@ -1,0 +1,13 @@
+1. What is angular ?
+    - Frontend Java script framework
+    - helps with building interactive, modern, web user interfaces
+    - collectio of tools and features
+    - CLI, Debugging Tools, IDE plugins etc.
+
+
+2. Angular Versions
+    - every 6 months new version releases.
+    - latest version is 20 in 2025.
+
+3. Create Angular Project 
+    -  Node.js , npm, angualr CLI
