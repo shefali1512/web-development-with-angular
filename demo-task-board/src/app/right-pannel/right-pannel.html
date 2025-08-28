@@ -1,0 +1,29 @@
+<div class="row text-color-white">
+  <!-- <h3>Task Details</h3> -->
+</div>
+<div class="row">
+  <div class="col-12">
+    <div class="card right-bg-color min-right-panel-height">
+        <div class="card-body">
+          @if (user !== undefined){
+            <div class="row">
+              <div class="col-12">
+                <p>Hello, {{user.name}}!</p>
+              </div>
+            </div>
+
+          <div class="row">
+            <div class="col-12">
+              <button type="button" class="btn btn-light m-r-4">Active Tasks</button>
+              <button type="button" class="btn btn-success m-r-4">Completed Tasks</button>
+              <app-new-task [user]="user"></app-new-task>
+            </div>
+          </div>
+            <app-task [user]="user" ></app-task>
+          }@else {
+            <p id="fallback">Select a user to see their tasks!</p>
+          }
+        </div>
+      </div>
+  </div>
+</div>

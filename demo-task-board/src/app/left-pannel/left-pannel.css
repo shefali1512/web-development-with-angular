@@ -1,0 +1,19 @@
+.m-t-2{
+  margin-top: 2px;
+}
+
+.user-card-bg{
+  background: #60427f;
+  color: antiquewhite;
+}
+
+
+.header-img-size{
+  height: 40px;
+  width: 40px;
+}
+
+.center {
+  margin: auto;
+  padding-top: 10px;
+}

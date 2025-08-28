@@ -1,0 +1,9 @@
+.min-right-panel-height{
+  min-height: 70vh;
+}
+
+.right-bg-color{
+  background: #987cb7;
+  color: antiquewhite;
+  font-size: large;
+}

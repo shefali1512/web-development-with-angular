@@ -1,0 +1,14 @@
+.header-bg{
+  background: linear-gradient(
+    to bottom,
+    #2c0a4c,
+    #450d80
+  );
+  color: antiquewhite;
+  text-align: center;
+}
+
+.header-img-size{
+  height: 50px;
+  width: 50px;
+}

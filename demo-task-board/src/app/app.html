@@ -1,0 +1,13 @@
+<div class="container">
+  <app-header></app-header>
+  <div class="row m-t-5">
+    <div class="col-1"></div>
+    <div class="col-3">
+      <app-left-pannel (userDataEmitter)="getUserData($event)"></app-left-pannel>
+    </div>
+    <div class="col-7">
+      <app-right-pannel [user]="user"></app-right-pannel>
+    </div>
+    <div class="col-1"></div>
+  </div>
+</div>

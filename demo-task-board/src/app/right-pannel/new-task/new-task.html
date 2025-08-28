@@ -1,0 +1,26 @@
+<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal">Add Task</button>
+
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <div class="row">
+                    <div class="col-12">
+                      <h5 class="modal-title" id="myModalLabel">Hello, {{user.name}}!</h5>
+                    </div>
+                    <div class="col-12">
+                      <p>Add details given below to create a new task.</p>
+                    </div>
+                  </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    This is the content of your modal popup.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
