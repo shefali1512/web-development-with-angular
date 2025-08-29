@@ -1,1 +1,51 @@
+<div class="container border p-2 m-2" >
+<div class="row">
+    <div class="col-3 text-color-black">
+     Task Title :
+    </div>
+    <div class="col-9">
+      {{task.title}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-3 text-color-black">
+     Task Name :
+    </div>
+    <div class="col-9">
+      {{task.title}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-3 text-color-black">
+     Task Summary :
+    </div>
+    <div class="col-9">
+      {{task.summary}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-3 text-color-black">
+     Task Due date :
+    </div>
+    <div class="col-9">
+      {{task.dueDate}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-3 text-color-black">
+     Task Status :
+    </div>
+    <div class="col-9">
+      {{task.status}}
+    </div>
+</div>
+<div class="row">
+  <div class="col-12" >
+    @if (task.status === 'A' ) {
+      <button type="submit" style="float: right;background-color: #60427f;color: antiquewhite;
+      " class="btn" >Mark as Complete</button>
+    }
+  </div>
+</div>
+</div>
 

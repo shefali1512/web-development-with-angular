@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { User } from '../../left-pannel/user-model';
+import { TaskModel } from './task.model';
 
 @Component({
   selector: 'app-task',
@@ -9,6 +10,10 @@ import { User } from '../../left-pannel/user-model';
 })
 export class Task {
   @Input({required:true}) user !: User;
+  @Input({required:true}) task !: TaskModel;
+
+
+
 
 
 }
