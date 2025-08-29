@@ -43,7 +43,10 @@
   <div class="col-12" >
     @if (task.status === 'A' ) {
       <button type="submit" style="float: right;background-color: #60427f;color: antiquewhite;
-      " class="btn" >Mark as Complete</button>
+      " class="btn" (click)="updateStatus('C')" >Mark as Complete</button>
+    }@else if(task.status === 'C'){
+      <button type="submit" style="float: right;background-color: #60427f;color: antiquewhite;
+      " class="btn" (click)="updateStatus('D')" >Delete</button>
     }
   </div>
 </div>

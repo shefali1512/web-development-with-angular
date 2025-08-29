@@ -1,5 +1,5 @@
 <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal">Add Task</button>
-
+<form>
 <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -15,12 +15,32 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    This is the content of your modal popup.
+                  <div class="form-group">
+                    <label for="task-id">Task Id</label>
+                    <input type="text" class="form-control" name="task-id" id="task-id" placeholder="Task Id" [(ngModel)]="taskId">
+                  </div>
+                  <div class="form-group">
+                    <label for="user-id">User Id</label>
+                    <input disabled type="text" class="form-control" id="user-id" [placeholder]="user.id">
+                  </div>
+                    <div class="form-group">
+                      <label for="title">Title</label>
+                      <input type="text" class="form-control" id="title" name="title" aria-describedby="title" placeholder="Enter title" [(ngModel)]="taskTitle">
+                    </div>
+                    <div class="form-group">
+                      <label for="summary">Summary</label>
+                      <textarea type="text" class="form-control" id="summary" name="summary" placeholder="Summary" [(ngModel)]="taskSummary"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="due-date">Due Date</label>
+                      <input type="date" class="form-control" id="due-date" name="due-date" placeholder="Due Date"  [(ngModel)]="dueDate">
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="addNewTask()">Save changes</button>
                 </div>
             </div>
         </div>
     </div>
+</form>

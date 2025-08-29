@@ -2,6 +2,8 @@ import { NewTask } from './new-task/new-task';
 import { Component, Input, ViewChild } from '@angular/core';
 import { Task } from './task/task';
 import { User } from '../left-pannel/user-model';
+import { TaskModel } from './task/task.model';
+import { CustomTaskActionModel } from './task/task-action.model';
 
 @Component({
   selector: 'app-right-pannel',
@@ -67,11 +69,33 @@ export class RightPannel {
       status: 'C'
     },
   ];
-  public filteredTasks = this.tasks;
 
+  public filteredTasks = this.tasks;
 
   get showTasksByStatusAndUserId() {
     return this.tasks.filter((task)=> task.userId === this.user.id && task.status === this.selecedTaskStatus);
-    console.log(this.filteredTasks);
   }
+
+  markTaskAsComplete(taskData: CustomTaskActionModel) {
+    if(taskData.action == 'C'){
+      this.tasks.map((task) => {
+        if (task.id === taskData.task.id) {
+          task.status = 'C';
+        }
+      });
+    }else if(taskData.action == 'D'){
+      this.tasks.map((task) => {
+        if (task.id === taskData.task.id) {
+          task.status = 'D';
+        }
+      });
+    }
+
+  }
+
+  addNewTask(taskData: TaskModel) {
+    console.log("new" ,  taskData)
+    this.tasks.push(taskData);
+  }
+
 }
